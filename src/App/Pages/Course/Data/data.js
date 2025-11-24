@@ -4,7 +4,7 @@ const CourseDetails = [
     courseTitle: "MERN Stack Fullstack Development",
     content:
       "Learn to build fullstack web applications using MongoDB, Express.js, React.js, and Node.js.",
-    bgImage: "/logo192.png",
+    bgImage: "/ntech website/mern.jpg",
     popupContents: {
       mainContent:
         "MERN Stack is a combination of MongoDB, Express.js, React.js, and Node.js. You will learn how to create dynamic websites, REST APIs, and connect frontend React apps with backend Node.js servers and MongoDB databases.",

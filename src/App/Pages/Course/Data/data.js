@@ -80,7 +80,7 @@ const CourseDetails = [
     courseTitle: "C and C++",
     content:
       "This introductory course provides a solid foundation in the C programming language, covering basic concepts, syntax, and programming techniques.",
-    bgImage: "/c and c++.webp",
+    bgImage: "/c%20and%20c++.webp",
     popupContents: {
       mainContent:
         "C is a general-purpose programming language that was created by Dennis Ritchie at Bell Labs in the early 1970s. C++ is an extension of C with additional features, combining procedural and object-oriented programming.",
@@ -99,7 +99,7 @@ const CourseDetails = [
     courseTitle: "Python MySQL Package",
     content:
       "This comprehensive course is designed to equip students with the knowledge and skills to develop Python applications that seamlessly interact with MySQL databases.",
-    bgImage: "/python (1).jpg",
+    bgImage: "/python.jpg",
     popupContents: {
       mainContent:
         "Python programming is a versatile and popular programming language that is widely used for data exploration and analysis. Python provides powerful libraries such as NumPy and pandas for data manipulation and analysis.",
@@ -156,7 +156,7 @@ const CourseDetails = [
     courseTitle: "UI / UX",
     content:
       "This course provides a comprehensive introduction to the principles of user interface and user experience design.",
-    bgImage: "/uiux (1).jpg",
+    bgImage: "/uiux.jpg",
     popupContents: {
       mainContent:
         "UI - User Interface refers to the point of interaction between a user and software. UX - User Experience refers to the overall experience that a user has when interacting with a product.",
@@ -194,7 +194,7 @@ const CourseDetails = [
     courseTitle: "Web Designing",
     content:
       "This introductory course covers the fundamental principles of web design including layout, typography, color theory, and UI design.",
-    bgImage: "/web designing.webp",
+    bgImage: "/web%20designing.webp",
     popupContents: {
       mainContent:
         "Web designing is planning, conceptualizing, and implementing websites for functional and good user experience.",
@@ -232,7 +232,7 @@ const CourseDetails = [
     courseTitle: "Tally ERP 9 including GST",
     content:
       "Learn accounting, finance, inventory, sales, and purchase management using Tally ERP 9.",
-    bgImage: "/logo192.png",
+    bgImage: "/Tally-Erp.png",
     popupContents: {
       mainContent:
         "Tally ERP 9 helps business owners manage accounts, billing, taxation, and more with simplicity.",
@@ -251,7 +251,7 @@ const CourseDetails = [
     courseTitle: " Advanced Excel",
     content:
       "This course provides foundational understanding of data analysis techniques using Excel.",
-    bgImage: "/data analysis.jpg",
+    bgImage: "/Excel.png",
     popupContents: {
       mainContent:
         "Data analysis includes inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making.",
@@ -289,7 +289,7 @@ const CourseDetails = [
     courseTitle: "Python Programming and Data Exploration",
     content:
       "This course serves as a comprehensive introduction to Python for data science and software development.",
-    bgImage: "/python (1).jpg",
+    bgImage: "/python.jpg",
     popupContents: {
       mainContent:
         "Data Structures and Algorithms form the backbone of efficient programs. Key concepts include arrays, linked lists, stacks, and queues.",

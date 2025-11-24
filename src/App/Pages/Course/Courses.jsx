@@ -27,11 +27,15 @@ function Courses() {
           <div className="flex flex-wrap -m-4">
             {CourseDetails.map((course) => (
               <div key={course?.id} className="p-4 md:w-1/3">
-                <div
-                  className="flex rounded-lg h-full p-8 flex-col bg-cover bg-center bg-no-repeat shadow-lg"
-                  style={{ backgroundImage: `url(${course.bgImage})` }} // <-- only one div with bg
-                >
-                  <div className="flex-grow bg-white/80 p-5 rounded-lg backdrop-blur-sm">
+                <div className="flex flex-col rounded-lg overflow-hidden shadow-lg h-full bg-white">
+                  {/* Top Image */}
+                  <div
+                    className="h-48 w-full bg-cover bg-center"
+                    style={{ backgroundImage: `url(${course.bgImage})` }}
+                  ></div>
+
+                  {/* Content Below */}
+                  <div className="flex-grow p-5">
                     <div className="flex items-center mb-3">
                       <h2 className="text-black text-lg title-font font-bold">
                         {course?.courseTitle}

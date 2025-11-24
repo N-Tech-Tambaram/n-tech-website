@@ -4,7 +4,7 @@ const CourseDetails = [
     courseTitle: "MERN Stack Fullstack Development",
     content:
       "Learn to build fullstack web applications using MongoDB, Express.js, React.js, and Node.js.",
-    bgImage: "/ntech website/mern.jpg",
+    bgImage: "/mern.jpg",
     popupContents: {
       mainContent:
         "MERN Stack is a combination of MongoDB, Express.js, React.js, and Node.js. You will learn how to create dynamic websites, REST APIs, and connect frontend React apps with backend Node.js servers and MongoDB databases.",
@@ -23,7 +23,7 @@ const CourseDetails = [
     courseTitle: "Cloud & DevOps",
     content:
       "This course provides hands-on knowledge of cloud platforms and DevOps practices for modern software development.",
-    bgImage: "/logo192.png",
+    bgImage: "/cloud and devops.webp",
     popupContents: {
       mainContent:
         "You will learn cloud fundamentals, working with AWS, Azure, or Google Cloud, CI/CD pipelines, containerization with Docker, and automation using DevOps tools.",

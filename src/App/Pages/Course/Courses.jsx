@@ -4,7 +4,6 @@ import Modal from "../../Components/Modal";
 
 function Courses() {
   const [showModal, setShowModal] = useState(false);
-
   const [selectedCourse, setSelectedCourse] = useState(null);
 
   const handleCloseModal = () => {
@@ -28,20 +27,21 @@ function Courses() {
           <div className="flex flex-wrap -m-4">
             {CourseDetails.map((course) => (
               <div key={course?.id} className="p-4 md:w-1/3">
-                <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
-                  <div className="flex items-center mb-3">
-                    <h2 className="text-black text-lg title-font font-bold">
-                      {course?.courseTitle}
-                    </h2>
-                  </div>
-                  <div className="flex-grow">
+                <div
+                  className="flex rounded-lg h-full p-8 flex-col bg-cover bg-center bg-no-repeat shadow-lg"
+                  style={{ backgroundImage: `url(${course.bgImage})` }} // <-- use bgImage link
+                >
+                  <div className="flex-grow bg-white/80 p-5 rounded-lg backdrop-blur-sm">
+                    <div className="flex items-center mb-3">
+                      <h2 className="text-black text-lg title-font font-bold">
+                        {course?.courseTitle}
+                      </h2>
+                    </div>
                     <p className="leading-relaxed text-black text-base">
                       {course?.content}
                     </p>
                     <button
                       onClick={() => handleOpenModal(course)}
-                      // target="_blank"
-                      // to={`/course/${id}`}
                       className="mt-3 text-customBlue font-semibold inline-flex justify-end items-center"
                     >
                       Learn More

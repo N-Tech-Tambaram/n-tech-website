@@ -1,13 +1,70 @@
 const CourseDetails = [
   {
     id: 1,
+    courseTitle: "AI & Machine Learning",
+    content:
+      "Learn AI and Machine Learning fundamentals, algorithms, model building, and real-world applications.",
+    bgImage: "/ai.jpeg",
+    popupContents: {
+      mainContent:
+        "AI and ML help machines learn from data, make predictions, and automate decision-making across industries.",
+      basicPoints: {
+        p1: "Introduction to AI & ML",
+        p2: "Supervised & Unsupervised Learning",
+      },
+      advPoints: {
+        p1: "Deep Learning & Neural Networks",
+        p2: "Real-world Projects & Deployment",
+      },
+    },
+  },
+  {
+    id: 2,
+    courseTitle: "Prompt Engineering",
+    content:
+      "Master how to design high-quality prompts for ChatGPT, Gemini, Claude, and other AI tools.",
+    bgImage: "/prompt.jpeg",
+    popupContents: {
+      mainContent:
+        "Prompt Engineering focuses on structuring effective instructions to maximize accuracy, creativity, and performance in AI outputs.",
+      basicPoints: {
+        p1: "Types of Prompts",
+        p2: "Prompt Structure & Formatting",
+      },
+      advPoints: {
+        p1: "Role-based & Multi-step Prompts",
+        p2: "Prompts for Coding, Writing & Data Tasks",
+      },
+    },
+  },
+  {
+    id: 3,
+    courseTitle: "Data Science & AI",
+    content:
+      "Learn data science fundamentals, Python programming, analysis, visualization, and ML models.",
+    bgImage: "/datascience.jpg",
+    popupContents: {
+      mainContent:
+        "Data Science involves collecting, cleaning, analyzing, and modeling data to uncover insights and predictions.",
+      basicPoints: {
+        p1: "Python for Data Science",
+        p2: "Data Analysis & Visualization",
+      },
+      advPoints: {
+        p1: "Machine Learning Algorithms",
+        p2: "Real-world Data Projects",
+      },
+    },
+  },
+  {
+    id: 4,
     courseTitle: "MERN Stack Fullstack Development",
     content:
       "Learn to build fullstack web applications using MongoDB, Express.js, React.js, and Node.js.",
     bgImage: "/mern.jpg",
     popupContents: {
       mainContent:
-        "MERN Stack is a combination of MongoDB, Express.js, React.js, and Node.js. You will learn how to create dynamic websites, REST APIs, and connect frontend React apps with backend Node.js servers and MongoDB databases.",
+        "Build modern fullstack applications using MERN: frontend (React), backend (Node/Express), and database (MongoDB).",
       basicPoints: {
         p1: "MongoDB & Express.js",
         p2: "React.js Basics",
@@ -19,14 +76,14 @@ const CourseDetails = [
     },
   },
   {
-    id: 2,
+    id: 5,
     courseTitle: "Cloud & DevOps",
     content:
-      "This course provides hands-on knowledge of cloud platforms and DevOps practices for modern software development.",
-  bgImage: "/cloud%20and%20devops.webp",
+      "Master cloud platforms, CI/CD pipelines, Docker, Kubernetes, and automation tools.",
+    bgImage: "/cloud%20and%20devops.webp",
     popupContents: {
       mainContent:
-        "You will learn cloud fundamentals, working with AWS, Azure, or Google Cloud, CI/CD pipelines, containerization with Docker, and automation using DevOps tools.",
+        "Learn AWS/Azure/GCP basics, CI/CD setup, containerization, and cloud-native deployment.",
       basicPoints: {
         p1: "Cloud Fundamentals",
         p2: "Version Control with Git",
@@ -38,328 +95,347 @@ const CourseDetails = [
     },
   },
   {
-    id: 3,
-    courseTitle: "Data Science & AI",
-    content:
-      "This course provides a comprehensive introduction to data science, data analysis, and machine learning using Python.",
-    bgImage: "/datascience.jpg",
-    popupContents: {
-      mainContent:
-        "You will learn data collection, cleaning, analysis, visualization, and building predictive models using libraries such as NumPy, pandas, Matplotlib, and Scikit-learn.",
-      basicPoints: {
-        p1: "Python for Data Science",
-        p2: "Data Analysis & Visualization",
-      },
-      advPoints: {
-        p1: "Machine Learning Models",
-        p2: "Real-world Data Projects",
-      },
-    },
-  },
-  {
-    id: 4,
-    courseTitle: "Data Structures and Algorithms",
-    content:
-      "This introductory course provides a comprehensive foundation in data structures and algorithms, which are fundamental to computer science and programming.",
-    bgImage: "/dsa.png",
-    popupContents: {
-      mainContent:
-        "A data structure is a way of organising and storing data in a computer's memory so that it can be used efficiently. It defines the relationship between data and the operations that can be performed on the data. Common data structures include arrays, linked lists, stacks, queues, trees, and graphs. An algorithm is a step-by-step procedure or set of rules for solving a specific problem or accomplishing a particular task. Algorithms are independent of programming languages and are essential for writing efficient and effective computer programs.",
-      basicPoints: {
-        p1: "Linear & Non-Linear Data structures",
-        p2: "Search & Sort Algorithms",
-      },
-      advPoints: {
-        p1: "Hashed Data Structures",
-        p2: "Graph Algorithms",
-      },
-    },
-  },
-  {
-    id: 5,
-    courseTitle: "C and C++",
-    content:
-      "This introductory course provides a solid foundation in the C programming language, covering basic concepts, syntax, and programming techniques.",
-    bgImage: "/c%20and%20c++.webp",
-    popupContents: {
-      mainContent:
-        "C is a general-purpose programming language that was created by Dennis Ritchie at Bell Labs in the early 1970s. C++ is an extension of C with additional features, combining procedural and object-oriented programming.",
-      basicPoints: {
-        p1: "Procedural Programming",
-        p2: "Low-Level Manipulation",
-      },
-      advPoints: {
-        p1: "Application Development",
-        p2: "Higher-Level Abstractions",
-      },
-    },
-  },
-  {
     id: 6,
-    courseTitle: "Python MySQL Package",
+    courseTitle: "AWS Cloud Architect",
     content:
-      "This comprehensive course is designed to equip students with the knowledge and skills to develop Python applications that seamlessly interact with MySQL databases.",
-    bgImage: "/python.jpg",
+      "Learn to design, deploy, secure, and scale cloud infrastructure on AWS.",
+    bgImage: "/AWS.jpg",
     popupContents: {
       mainContent:
-        "Python programming is a versatile and popular programming language that is widely used for data exploration and analysis. Python provides powerful libraries such as NumPy and pandas for data manipulation and analysis.",
+        "AWS Architecture includes EC2, S3, VPC, IAM, Lambda, RDS, CloudWatch, and cloud security best practices.",
       basicPoints: {
-        p1: "Data Analysis",
-        p2: "Machine Learning",
+        p1: "AWS Core Services",
+        p2: "Identity & Access Management",
       },
       advPoints: {
-        p1: "Web Development",
-        p2: "Data Visualization",
+        p1: "High Availability Architecture",
+        p2: "Cost Optimization & Scaling",
       },
     },
   },
   {
     id: 7,
-    courseTitle: "Java MySQL Package",
+    courseTitle: "DevOps Engineering",
     content:
-      "This course provides a solid foundation in both Java programming and MySQL database management.",
-    bgImage: "/java.jpg",
+      "Master DevOps tools like Git, Jenkins, Docker, Kubernetes, Ansible, and CI/CD pipelines.",
+    bgImage: "/devops.png",
     popupContents: {
       mainContent:
-        "Java is a versatile programming language widely used for developing software, including web applications. MySQL is a popular relational database. You can connect Java apps to MySQL using JDBC.",
+        "DevOps integrates development and operations for faster deployment and automation.",
       basicPoints: {
-        p1: "Web Development",
-        p2: "Big Data Processing",
+        p1: "Linux & Shell Scripting",
+        p2: "Git & Jenkins",
       },
       advPoints: {
-        p1: "Mobile App Development",
-        p2: "Desktop Applications",
+        p1: "Docker & Kubernetes",
+        p2: "Monitoring & Automation Tools",
       },
     },
   },
   {
     id: 8,
-    courseTitle: "Java React Fullstack",
+    courseTitle: "DevOps with Terraform",
     content:
-      "A Java React Fullstack course typically covers both the Java programming language for backend development and the React JavaScript library for frontend development.",
-    bgImage: "/java.jpg",
+      "Learn Infrastructure as Code using Terraform for automated cloud provisioning.",
+    bgImage: "/terraform.webp",
     popupContents: {
       mainContent:
-        "Java is a high-level, object-oriented programming language. React is a JavaScript library for building dynamic UIs. Fullstack development combines frontend and backend development skills.",
+        "Terraform allows provisioning infrastructure across AWS, Azure, and GCP using declarative configuration files.",
       basicPoints: {
-        p1: "Advanced Java",
-        p2: "Springboot Framework",
+        p1: "Terraform Basics",
+        p2: "Providers & Modules",
       },
       advPoints: {
-        p1: "Core React",
-        p2: "Integration with APIs",
+        p1: "IaC Automation",
+        p2: "Terraform Cloud & Workspaces",
       },
     },
   },
   {
     id: 9,
-    courseTitle: "UI / UX",
+    courseTitle: "Flutter App Development",
     content:
-      "This course provides a comprehensive introduction to the principles of user interface and user experience design.",
-    bgImage: "/uiux.jpg",
+      "Learn to build cross-platform mobile apps for Android & iOS using Flutter and Dart.",
+    bgImage: "/flutter.png",
     popupContents: {
       mainContent:
-        "UI - User Interface refers to the point of interaction between a user and software. UX - User Experience refers to the overall experience that a user has when interacting with a product.",
+        "Flutter enables fast mobile app development with a single codebase using Dart.",
       basicPoints: {
-        p1: "Visual Design",
-        p2: "Responsive Design",
+        p1: "Dart Programming",
+        p2: "Flutter Widgets",
       },
       advPoints: {
-        p1: "User Research",
-        p2: "Interactive Design",
+        p1: "API Integration",
+        p2: "App Deployment",
       },
     },
   },
   {
     id: 10,
-    courseTitle: ".NET (MVC)",
+    courseTitle: "Data Analytics",
     content:
-      "This beginner-level course provides a comprehensive introduction to the .NET framework, including its history and components.",
-    bgImage: "/net.png",
+      "Learn data collection, cleaning, visualization, reporting, and insights generation.",
+    bgImage: "/data_analysis.jpg",
     popupContents: {
       mainContent:
-        "NET MVC (Model-View-Controller) is a framework for building web applications by separating data, UI, and control logic.",
+        "Data Analytics transforms raw data into insights using tools like Excel, Python, and BI dashboards.",
       basicPoints: {
-        p1: "MVC Patterns",
-        p2: "Routing",
+        p1: "Data Cleaning",
+        p2: "Exploratory Data Analysis",
       },
       advPoints: {
-        p1: "Validation",
-        p2: "Web API",
+        p1: "Visualization Tools",
+        p2: "Statistical Insights",
       },
     },
   },
   {
     id: 11,
-    courseTitle: "Web Designing",
+    courseTitle: "Python Programming",
     content:
-      "This introductory course covers the fundamental principles of web design including layout, typography, color theory, and UI design.",
-    bgImage: "/web%20designing.webp",
+      "Learn Python fundamentals, problem solving, OOP, and data handling.",
+    bgImage: "/Python.jpeg",
     popupContents: {
       mainContent:
-        "Web designing is planning, conceptualizing, and implementing websites for functional and good user experience.",
+        "Python is widely used for automation, data science, backend development, and scripting.",
       basicPoints: {
-        p1: "Figma",
-        p2: "Designing Tools",
+        p1: "Python Basics",
+        p2: "Functions & OOP",
       },
       advPoints: {
-        p1: "HTML & CSS",
-        p2: "Sketches and Designing Softwares",
+        p1: "File Handling & APIs",
+        p2: "Mini Projects",
       },
     },
   },
   {
     id: 12,
-    courseTitle: "Ms Office",
-    bgImage: "/ms_office.webp",
+    courseTitle: "Power BI – Data Analysis & Visualization",
     content:
-      "This comprehensive Microsoft Word course is designed to help you become proficient in creating, formatting, and editing documents.",
+      "Learn Power BI dashboards, DAX, data modeling, and BI reporting.",
+    bgImage: "/Power-BI.webp",
     popupContents: {
       mainContent:
-        "Microsoft Office is a powerful suite of productivity tools including Word, Excel, and PowerPoint.",
+        "Power BI helps visualize data and create interactive dashboards for business decisions.",
       basicPoints: {
-        p1: "Word",
-        p2: "Excel",
+        p1: "Power BI Basics",
+        p2: "Reports & Dashboards",
       },
       advPoints: {
-        p1: "PowerPoint",
-        p2: "Outlook",
+        p1: "DAX Measures",
+        p2: "Workspace Publishing",
       },
     },
   },
   {
     id: 13,
-    courseTitle: "Tally ERP 9 including GST",
+    courseTitle: "Java Fullstack",
     content:
-      "Learn accounting, finance, inventory, sales, and purchase management using Tally ERP 9.",
-    bgImage: "/Tally-Erp.png",
+      "Learn Java, Spring Boot backend, and React.js frontend to build modern fullstack applications.",
+    bgImage: "/java.jpg",
     popupContents: {
       mainContent:
-        "Tally ERP 9 helps business owners manage accounts, billing, taxation, and more with simplicity.",
+        "Combines Java backend + React frontend for fullstack web development.",
       basicPoints: {
-        p1: "Accounting",
-        p2: "Billing",
+        p1: "Core Java & OOP",
+        p2: "Spring Boot",
       },
       advPoints: {
-        p1: "Taxation",
-        p2: "Banking",
+        p1: "React.js",
+        p2: "API Integration",
       },
     },
   },
   {
     id: 14,
-    courseTitle: " Advanced Excel",
+    courseTitle: "Java Programming",
     content:
-      "This course provides foundational understanding of data analysis techniques using Excel.",
-    bgImage: "/Excel.png",
+      "Learn Java fundamentals, OOP, collections, JDBC, and application building.",
+    bgImage: "/java.jpg",
     popupContents: {
       mainContent:
-        "Data analysis includes inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making.",
+        "Java is widely used for backend development, Android apps, enterprise systems, and automation.",
       basicPoints: {
-        p1: "Logical function",
-        p2: "Data validation",
+        p1: "Java Basics",
+        p2: "OOP Concepts",
       },
       advPoints: {
-        p1: "Lookup function",
-        p2: "Pivot tables",
+        p1: "JDBC & MySQL",
+        p2: "Java Applications",
       },
     },
   },
   {
     id: 15,
-    courseTitle: "Data Analysis and Visualisation in Power Bi",
+    courseTitle: "Software Testing",
     content:
-      "This course introduces Power BI for data analysis and visualization.",
-    bgImage: "/Power-BI.webp",
+      "Learn manual testing, SDLC, STLC, test cases, and automation with Selenium.",
+    bgImage: "/Software-Testing.jpg",
     popupContents: {
       mainContent:
-        "Power BI is a business analytics service that lets you visualize your data and share insights through dashboards and reports.",
+        "Software Testing ensures applications are bug-free and meet quality standards.",
       basicPoints: {
-        p1: "Introduction to Power BI",
-        p2: "Reports and dashboards",
+        p1: "Manual Testing Basics",
+        p2: "SDLC & STLC",
       },
       advPoints: {
-        p1: "Publishing workbook and workspace",
-        p2: "Power BI report servers",
+        p1: "Selenium Automation",
+        p2: "Bug Tracking Tools",
       },
     },
   },
   {
     id: 16,
-    courseTitle: "Python Programming and Data Exploration",
+    courseTitle: "Data Structures and Algorithms (DSA)",
     content:
-      "This course serves as a comprehensive introduction to Python for data science and software development.",
-    bgImage: "/python.jpg",
+      "Learn arrays, linked lists, trees, graphs, searching, sorting, and algorithms.",
+    bgImage: "/Dsa.jpeg",
     popupContents: {
       mainContent:
-        "Data Structures and Algorithms form the backbone of efficient programs. Key concepts include arrays, linked lists, stacks, and queues.",
+        "DSA is essential for coding interviews, problem solving, and writing efficient programs.",
       basicPoints: {
-        p1: "Basics of Data Structures",
-        p2: "Linkedlist, Arraylist",
+        p1: "Linear & Non-linear Structures",
+        p2: "Sorting & Searching",
       },
       advPoints: {
-        p1: "Calculating Algorithms",
-        p2: "Sorting Algorithms",
+        p1: "Graph Algorithms",
+        p2: "Hashing & Optimization",
       },
     },
   },
   {
     id: 17,
-    courseTitle: "Digital Marketing",
+    courseTitle: "UI / UX Designing",
     content:
-      "This course provides understanding of social media marketing strategies and techniques.",
-    bgImage: "/digitalmarketing.jpg",
+      "Learn UI/UX fundamentals, wireframing, prototyping, color theory, and user research.",
+    bgImage: "/uiux.jpg",
     popupContents: {
       mainContent:
-        "Social media marketing uses platforms like Facebook, Twitter, and Instagram to build a brand, increase sales, and drive website traffic.",
+        "UI/UX focuses on improving user experience and designing visually appealing interfaces.",
       basicPoints: {
-        p1: "Make Money as an Affiliate Marketer",
-        p2: "Work From Home as a Freelance Marketer",
+        p1: "Visual Design",
+        p2: "Responsive Layouts",
       },
       advPoints: {
-        p1: "Get Hired as a Digital Marketing Expert",
-        p2: "",
+        p1: "User Research",
+        p2: "Interactive Prototyping",
       },
     },
   },
   {
     id: 18,
-    courseTitle: "SEO and SEM",
+    courseTitle: "Web Designing",
     content:
-      "This course provides foundation in strategies for optimizing websites for search engines and paid ads.",
-    bgImage: "/seo-sem.jpg",
+      "Learn HTML, CSS, Figma, layouts, and designing attractive websites.",
+    bgImage: "/web%20designing.webp",
     popupContents: {
       mainContent:
-        "SEO improves website visibility in search results. SEM promotes websites through paid advertising on search engines.",
+        "Web Designing focuses on layout, styling, color theory, and UI components.",
       basicPoints: {
-        p1: "On-page and Off-page SEO",
-        p2: "Technical SEO",
+        p1: "Figma Tools",
+        p2: "Design Principles",
       },
       advPoints: {
-        p1: "Pay per click advertising",
-        p2: "Mobile advertising",
+        p1: "HTML & CSS",
+        p2: "Responsive Design",
       },
     },
   },
   {
     id: 19,
-    courseTitle: "new course",
+    courseTitle: "C & C++ Programming",
     content:
-      "This course introduces email marketing, list building, campaign creation, and performance tracking.",
-    bgImage: "/logo192.png",
+      "Learn C and C++ programming fundamentals, memory handling, OOP, and application development.",
+    bgImage: "/c%20and%20c++.webp",
     popupContents: {
       mainContent:
-        "Email marketing uses emails to promote products or services, engage customers, and generate leads.",
+        "C/C++ are core programming languages used in system programming, gaming, and embedded systems.",
       basicPoints: {
-        p1: "Driving traffic through emails",
-        p2: "Email campaigns",
+        p1: "Procedural Programming",
+        p2: "Pointers & Memory",
       },
       advPoints: {
-        p1: "Building email lists",
-        p2: "Getting email subscribers",
+        p1: "OOP in C++",
+        p2: "Applications & Projects",
       },
     },
   },
+  {
+    id: 20,
+    courseTitle: ".NET (MVC)",
+    content:
+      "Learn .NET framework, MVC architecture, routing, validation, and API development.",
+    bgImage: "/net.png",
+    popupContents: {
+      mainContent:
+        ".NET MVC helps build scalable enterprise-level web applications.",
+      basicPoints: {
+        p1: "MVC Architecture",
+        p2: "Routing & Controllers",
+      },
+      advPoints: {
+        p1: "Model Validation",
+        p2: "Web API Development",
+      },
+    },
+  },
+  {
+    id: 21,
+    courseTitle: "Tally ERP 9 with GST",
+    content:
+      "Learn accounting, billing, GST, finance management, and inventories using Tally.",
+    bgImage: "/Tally-Erp.png",
+    popupContents: {
+      mainContent:
+        "Tally ERP 9 manages accounting, taxation, payroll, and business operations.",
+      basicPoints: {
+        p1: "Accounting Basics",
+        p2: "Billing & Inventory",
+      },
+      advPoints: {
+        p1: "GST & Taxation",
+        p2: "Banking & Reports",
+      },
+    },
+  },
+  {
+    id: 22,
+    courseTitle: "MS Office",
+    content:
+      "Learn Word, Excel, PowerPoint, and professional document creation.",
+    bgImage: "/ms_office.webp",
+    popupContents: {
+      mainContent:
+        "Microsoft Office includes essential productivity tools used in every industry.",
+      basicPoints: {
+        p1: "MS Word",
+        p2: "MS Excel",
+      },
+      advPoints: {
+        p1: "PowerPoint",
+        p2: "Outlook & Office Tools",
+      },
+    },
+  },
+  {
+    id: 23,
+    courseTitle: "Digital Marketing",
+    content:
+      "Learn social media marketing, branding, advertising, and online promotions.",
+    bgImage: "/digital.jpeg",
+    popupContents: {
+      mainContent:
+        "Digital marketing helps promote businesses using social media, SEO, paid ads, and content strategies.",
+      basicPoints: {
+        p1: "Affiliate & Freelance Marketing",
+        p2: "Social Media Campaigns",
+      },
+      advPoints: {
+        p1: "Digital Ads Strategy skVANy4aZ",
+        p2: "Brand Growth Techniques",
+      },
+    },
+  }
 ];
 
 export default CourseDetails;

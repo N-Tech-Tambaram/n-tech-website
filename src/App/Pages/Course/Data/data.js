@@ -42,7 +42,7 @@ const CourseDetails = [
     courseTitle: "Data Science & AI",
     content:
       "Learn data science fundamentals, Python programming, analysis, visualization, and ML models.",
-    bgImage: "/datascience.jpg",
+    bgImage: "/datascience.jpeg",
     popupContents: {
       mainContent:
         "Data Science involves collecting, cleaning, analyzing, and modeling data to uncover insights and predictions.",
@@ -232,7 +232,7 @@ const CourseDetails = [
     courseTitle: "Java Fullstack",
     content:
       "Learn Java, Spring Boot backend, and React.js frontend to build modern fullstack applications.",
-    bgImage: "/java.jpg",
+    bgImage: "/javafullstack.webp",
     popupContents: {
       mainContent:
         "Combines Java backend + React frontend for fullstack web development.",
@@ -422,7 +422,7 @@ const CourseDetails = [
     courseTitle: "Digital Marketing",
     content:
       "Learn social media marketing, branding, advertising, and online promotions.",
-    bgImage: "/digital.jpeg",
+    bgImage: "/digetal-mark.jpg",
     popupContents: {
       mainContent:
         "Digital marketing helps promote businesses using social media, SEO, paid ads, and content strategies.",

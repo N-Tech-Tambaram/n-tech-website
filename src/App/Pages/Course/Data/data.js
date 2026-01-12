@@ -9,12 +9,12 @@ const CourseDetails = [
       mainContent:
         "AI and ML help machines learn from data, make predictions, and automate decision-making across industries.",
       basicPoints: {
-        p1: "Introduction to AI & ML",
-        p2: "Supervised & Unsupervised Learning",
+        p1: "AI & Machine Learning Course",
+        p2: "Natural Language Processing (NLP)",
       },
       advPoints: {
         p1: "Deep Learning & Neural Networks",
-        p2: "Real-world Projects & Deployment",
+        p2: "AI Models",
       },
     },
   },
@@ -48,11 +48,11 @@ const CourseDetails = [
         "Data Science involves collecting, cleaning, analyzing, and modeling data to uncover insights and predictions.",
       basicPoints: {
         p1: "Python for Data Science",
-        p2: "Data Analysis & Visualization",
+        p2: "NLP ",
       },
       advPoints: {
         p1: "Machine Learning Algorithms",
-        p2: "Real-world Data Projects",
+        p2: "Deep Learning using TensorFlow",
       },
     },
   },
@@ -66,12 +66,12 @@ const CourseDetails = [
       mainContent:
         "Build modern fullstack applications using MERN: frontend (React), backend (Node/Express), and database (MongoDB).",
       basicPoints: {
-        p1: "MongoDB & Express.js",
-        p2: "React.js Basics",
+        p1: "MongoDB",
+        p2: "React.js ",
       },
       advPoints: {
-        p1: "Node.js Backend",
-        p2: "Fullstack Project Deployment",
+        p1: "Node.js ",
+        p2: "Express.js & RestApi",
       },
     },
   },
@@ -85,11 +85,11 @@ const CourseDetails = [
       mainContent:
         "Learn AWS/Azure/GCP basics, CI/CD setup, containerization, and cloud-native deployment.",
       basicPoints: {
-        p1: "Cloud Fundamentals",
+        p1: "Lunix for Cloud",
         p2: "Version Control with Git",
       },
       advPoints: {
-        p1: "CI/CD Pipelines",
+        p1: "AWS",
         p2: "Docker & Kubernetes",
       },
     },
@@ -199,8 +199,8 @@ const CourseDetails = [
       mainContent:
         "Python is widely used for automation, data science, backend development, and scripting.",
       basicPoints: {
-        p1: "Python Basics",
-        p2: "Functions & OOP",
+        p1: "Python Programming",
+        p2: "Functions & OOPs",
       },
       advPoints: {
         p1: "File Handling & APIs",
@@ -218,7 +218,7 @@ const CourseDetails = [
       mainContent:
         "Power BI helps visualize data and create interactive dashboards for business decisions.",
       basicPoints: {
-        p1: "Power BI Basics",
+        p1: "Power BI ",
         p2: "Reports & Dashboards",
       },
       advPoints: {
@@ -251,12 +251,12 @@ const CourseDetails = [
     courseTitle: "Java Programming",
     content:
       "Learn Java fundamentals, OOP, collections, JDBC, and application building.",
-    bgImage: "/java.jpg",
+    bgImage: "/javaa.webp",
     popupContents: {
       mainContent:
         "Java is widely used for backend development, Android apps, enterprise systems, and automation.",
       basicPoints: {
-        p1: "Java Basics",
+        p1: "Java Programming",
         p2: "OOP Concepts",
       },
       advPoints: {
@@ -275,8 +275,8 @@ const CourseDetails = [
       mainContent:
         "Software Testing ensures applications are bug-free and meet quality standards.",
       basicPoints: {
-        p1: "Manual Testing Basics",
-        p2: "SDLC & STLC",
+        p1: "Manual Testing, SDLC & STLC ",
+        p2: "API Testing using Postman",
       },
       advPoints: {
         p1: "Selenium Automation",
@@ -289,7 +289,7 @@ const CourseDetails = [
     courseTitle: "Data Structures and Algorithms (DSA)",
     content:
       "Learn arrays, linked lists, trees, graphs, searching, sorting, and algorithms.",
-    bgImage: "/Dsa.jpeg",
+    bgImage: "/ds.jpeg",
     popupContents: {
       mainContent:
         "DSA is essential for coding interviews, problem solving, and writing efficient programs.",
@@ -333,7 +333,7 @@ const CourseDetails = [
         "Web Designing focuses on layout, styling, color theory, and UI components.",
       basicPoints: {
         p1: "Figma Tools",
-        p2: "Design Principles",
+        p2: "Design Formats",
       },
       advPoints: {
         p1: "HTML & CSS",
@@ -389,7 +389,7 @@ const CourseDetails = [
       mainContent:
         "Tally ERP 9 manages accounting, taxation, payroll, and business operations.",
       basicPoints: {
-        p1: "Accounting Basics",
+        p1: "Accounting ",
         p2: "Billing & Inventory",
       },
       advPoints: {

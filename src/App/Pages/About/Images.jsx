@@ -3,30 +3,12 @@ import { Link } from "react-scroll";
 
 function Content() {
   const highlights = [
-    {
-      id: 1,
-      highlight: "CAREER OPPORTUNITIES",
-    },
-    {
-      id: 2,
-      highlight: "PROJECT WORKSTATIONS",
-    },
-    {
-      id: 3,
-      highlight: "COMPLIANCE TRAINING",
-    },
-    {
-      id: 4,
-      highlight: "INSTRUCTORS AND MENTORS",
-    },
-    {
-      id: 5,
-      highlight: "SKILL DEVELOPMENT",
-    },
-    {
-      id: 6,
-      highlight: "RESUME BUILDING ",
-    },
+    { id: 1, highlight: "CAREER OPPORTUNITIES" },
+    { id: 2, highlight: "PROJECT WORKSTATIONS" },
+    { id: 3, highlight: "COMPLIANCE TRAINING" },
+    { id: 4, highlight: "INSTRUCTORS AND MENTORS" },
+    { id: 5, highlight: "SKILL DEVELOPMENT" },
+    { id: 6, highlight: "RESUME BUILDING " },
   ];
 
   const flex_details = [
@@ -58,32 +40,30 @@ function Content() {
 
   return (
     <div>
-      <div className="text-gray-800 py-12 body-font">
+      <div className="text-gray-800 py-12 body-font animate-fadeIn">
         <div className="container px-5 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-customBlue">
+          
+          {/* HEADER */}
+          <div className="flex flex-col text-center w-full mb-20 transition-all duration-700 ease-out translate-y-0 opacity-100">
+            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-customBlue hover:scale-105 transition-transform duration-300">
               <span className="text-6xl">N</span>Tech, Tambaram
             </h1>
             <div className="lg:w-2/3 mx-auto text-lg text-justify leading-relaxed font-semibold">
-              <p>
-                <span>
-                  <span className="font-bold text-2xl">N</span>Tech Computer
-                  Education, a proprietorship firm, was established making it 9+
-                  years. The primary activity is in the services sector,
-                  specifically classified into education and IT sectors. The
-                  firm is engaged in other educational services and IT and
-                  services, IT consulting, and other services. Assessing our
-                  center alongside others highlights distinctive features and
-                  strengths.
-                </span>
+              <p className="transition-opacity duration-700 hover:opacity-90">
+                <p> <span> <span className="font-bold text-2xl">N</span>Tech Computer Education, a proprietorship firm, was established making it 9+ years. The primary activity is in the services sector, specifically classified into education and IT sectors. The firm is engaged in other educational services and IT and services, IT consulting, and other services. Assessing our center alongside others highlights distinctive features and strengths. </span> </p>
               </p>
             </div>
           </div>
+
+          {/* FLEX DETAILS */}
           <div className="flex flex-wrap">
             {flex_details.map(({ id, title, details }) => (
               <div
                 key={id}
-                className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
+                className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 
+                border-l-2 border-gray-200 border-opacity-60
+                transform transition-all duration-500
+                hover:scale-105 hover:shadow-xl hover:bg-gray-50"
               >
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
                   {title}
@@ -92,17 +72,24 @@ function Content() {
               </div>
             ))}
           </div>
+
+          {/* HIGHLIGHTS */}
           <div className="flex flex-wrap lg:w-4/5 sm:mx-auto mt-10 sm:mb-2 -mx-2">
             {highlights.map(({ id, highlight }) => (
               <div key={id} className="p-2 sm:w-1/2 w-full">
-                <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                <div
+                  className="bg-gray-100 rounded flex p-4 h-full items-center
+                  transform transition-all duration-500
+                  hover:translate-x-2 hover:shadow-lg"
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="3"
-                    className="text-customBlue w-6 h-6 flex-shrink-0 mr-4"
+                    className="text-customBlue w-6 h-6 flex-shrink-0 mr-4
+                    transition-transform duration-500 hover:rotate-12"
                     viewBox="0 0 24 24"
                   >
                     <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
@@ -113,11 +100,19 @@ function Content() {
               </div>
             ))}
           </div>
+
+          {/* BUTTON */}
           <Link to="enquiry" smooth duration={600}>
-            <button className="flex mx-auto mt-10 font-bold text-white bg-customOrange border-0 py-2 px-8 focus:outline-none  rounded text-lg">
+            <button
+              className="flex mx-auto mt-10 font-bold text-white 
+              bg-customOrange border-0 py-2 px-8 rounded text-lg
+              transform transition-all duration-300
+              hover:scale-110 hover:shadow-xl active:scale-95"
+            >
               Make a Enquiry
             </button>
           </Link>
+
         </div>
       </div>
     </div>

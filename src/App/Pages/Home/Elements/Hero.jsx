@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import ntechBanner from "../../../Assets/banner/nTech_banner.png";
 import TypewriterComponent from "typewriter-effect";
 import { MdVerified } from "react-icons/md";
 
 function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const totalSlides = 5;
 
   // Auto slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % 3);
+      setCurrentIndex((prev) => (prev + 1) % totalSlides);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -18,14 +18,6 @@ function Hero() {
 
   const slogan_string =
     "Unlock Your Potential with N Tech Programming Courses!";
-
-  const slogan = (
-    <TypewriterComponent
-      onInit={(typewriter) => {
-        typewriter.typeString(slogan_string).start();
-      }}
-    />
-  );
 
   return (
     <div name="home">
@@ -43,10 +35,9 @@ function Hero() {
               Be Future Ready
             </h1>
 
-            {/* Badge for mobile */}
+            {/* Badge (Mobile) */}
             <div className="sm:hidden block hover:scale-105 duration-200">
-              <span className="bg-customBlue flex gap-3 items-center 
-                               rounded px-3 py-2 sm:px-5 sm:py-2">
+              <span className="bg-customBlue flex gap-3 items-center rounded px-3 py-2">
                 <MdVerified className="text-2xl text-white" />
                 <span className="text-white text-xl font-bold">
                   100% Verified Courses
@@ -54,23 +45,22 @@ function Hero() {
               </span>
             </div>
 
-            <div className="mt-8 sm:mb-4 text-slate-900 
-                            text-justify font-medium leading-relaxed">
-              <p>
-              <span className="text-3xl text-customBlue font-bold">N</span> <span className="font-bold">Tech</span> provides a structured environment for individuals to acquire programming skills. Our center offers courses or internships covering various programming languages and related technologies. We have experienced instructors, hands-on projects, and resources to support learners in their journey to become proficient programmers. Choosing a reputable center can significantly enhance your learning experience and help you build a strong foundation in computer programming.
-              </p>
+            <div className="mt-8 sm:mb-4 text-slate-900 text-justify font-medium leading-relaxed">
+              <p> <span className="text-3xl text-customBlue font-bold">N</span> <span className="font-bold">Tech</span> provides a structured environment for individuals to acquire programming skills. Our center offers courses or internships covering various programming languages and related technologies. We have experienced instructors, hands-on projects, and resources to support learners in their journey to become proficient programmers. Choosing a reputable center can significantly enhance your learning experience and help you build a strong foundation in computer programming. </p>
             </div>
 
-            <div className="bg-gray-200 mt-3 p-3 px-18 rounded 
-                            text-customBlue text-lg sm:text-xl font-extrabold">
-              <p>{slogan}</p>
+            <div className="bg-gray-200 mt-3 p-3 rounded text-customBlue text-lg sm:text-xl font-extrabold">
+              <TypewriterComponent
+                onInit={(typewriter) => {
+                  typewriter.typeString(slogan_string).start();
+                }}
+              />
             </div>
 
             {/* Buttons */}
             <div className="flex flex-col mt-10 gap-6 sm:flex-row">
               <div className="hidden sm:block hover:scale-105 duration-200">
-                <span className="bg-customOrange flex gap-3 items-center 
-                                 rounded px-3 py-2 sm:px-5 sm:py-2">
+                <span className="bg-customOrange flex gap-3 items-center rounded px-3 py-2">
                   <MdVerified className="text-2xl text-white" />
                   <span className="text-white text-xl font-bold">
                     100% Verified Courses
@@ -83,8 +73,7 @@ function Hero() {
                 smooth
                 duration={600}
                 className="inline-flex text-customBlue border border-customBlue 
-                           font-bold py-2 px-8 focus:outline-none cursor-pointer 
-                           rounded text-lg"
+                           font-bold py-2 px-8 cursor-pointer rounded text-lg"
               >
                 Courses
               </Link>
@@ -94,8 +83,7 @@ function Hero() {
                 smooth
                 duration={600}
                 className="inline-flex font-extrabold text-black bg-gray-100 
-                           py-2 px-8 focus:outline-none cursor-pointer 
-                           rounded text-lg"
+                           py-2 px-8 cursor-pointer rounded text-lg"
               >
                 Contact
               </Link>
@@ -104,44 +92,22 @@ function Hero() {
 
           {/* RIGHT CONTENT — CAROUSEL */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-
             <div className="relative w-full overflow-hidden rounded-lg shadow-xl">
+
               <div
-                className="flex transition-transform duration-700"
+                className="flex transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
-                <img
-                  src="carsole1.jpeg"
-                  className="w-full h-80 object-cover flex-shrink-0"
-                  alt="carousel-1"
-                />
-                <img
-                  src="carsole2.jpeg"
-                  className="w-full h-80 object-cover flex-shrink-0"
-                  alt="carousel-2"
-                />
-               <img
-                src="carsole3.jpeg"
-                 className="w-full h-80 object-cover flex-shrink-0"
-                alt="carousel-3"
-                />
-                <img
-                src="carsole4.jpeg"
-                 className="w-full h-80 object-cover flex-shrink-0"
-                alt="carousel-3"
-                />
-                <img
-                src="carsole5.jpeg"
-                 className="w-full h-80 object-cover flex-shrink-0"
-                alt="carousel-3"
-                />
-
+                <img src="carsole1.jpeg" className="min-w-full h-80 object-cover" alt="1" />
+                <img src="carsole2.jpeg" className="min-w-full h-80 object-cover" alt="2" />
+                <img src="carsole3.jpeg" className="min-w-full h-80 object-cover" alt="3" />
+                <img src="carsole4.jpeg" className="min-w-full h-80 object-cover" alt="4" />
+                <img src="carsole5.jpeg" className="min-w-full h-80 object-cover" alt="5" />
               </div>
 
               {/* DOTS */}
-              <div className="absolute bottom-4 left-0 right-0 
-                              flex justify-center gap-2">
-                {[0, 1, 2, 3, 4, 5].map((i) => (
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+                {[0, 1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
                     onClick={() => setCurrentIndex(i)}
@@ -150,8 +116,8 @@ function Hero() {
                   />
                 ))}
               </div>
-            </div>
 
+            </div>
           </div>
 
         </div>
